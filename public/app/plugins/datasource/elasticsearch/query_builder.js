@@ -14,7 +14,6 @@ function (queryDef) {
     filter[this.timeField] = {
       gte: "$timeFrom",
       lte: "$timeTo",
-      format: "epoch_millis",
     };
 
     return filter;
@@ -66,7 +65,7 @@ function (queryDef) {
     esAgg.field = this.timeField;
     esAgg.min_doc_count = settings.min_doc_count || 0;
     esAgg.extended_bounds = {min: "$timeFrom", max: "$timeTo"};
-    esAgg.format = "epoch_millis";
+    //esAgg.format = "epoch_millis";
 
     if (esAgg.interval === 'auto') {
       esAgg.interval = "$__interval";
@@ -76,19 +75,6 @@ function (queryDef) {
       esAgg.missing = settings.missing;
     }
 
-    return esAgg;
-  };
-
-  ElasticQueryBuilder.prototype.getHistogramAgg = function(aggDef) {
-    var esAgg = {};
-    var settings = aggDef.settings || {};
-    esAgg.interval = settings.interval;
-    esAgg.field = aggDef.field;
-    esAgg.min_doc_count = settings.min_doc_count || 0;
-
-    if (settings.missing) {
-      esAgg.missing = settings.missing;
-    }
     return esAgg;
   };
 
@@ -166,22 +152,41 @@ function (queryDef) {
     target.timeField =  this.timeField;
 
     var i, nestedAggs, metric;
+    var jsoned_query;
+    try {
+      jsoned_query = JSON.parse(queryString);
+    } catch (_error) {
+      jsoned_query = {};
+    }
+
     var query = {
       "size": 0,
-      "query": {
-        "bool": {
-          "filter": [
-            {"range": this.getRangeFilter()},
-            {
-              "query_string": {
-                "analyze_wildcard": true,
-                "query": queryString,
-              }
-            }
-          ]
-        }
-      }
+      "query": jsoned_query
     };
+    if (query.query.hasOwnProperty('bool') && query.query.bool.hasOwnProperty('must')) {
+      if (query.query.bool.must.constructor === Array){
+        query.query.bool.must.push({"range": this.getRangeFilter()});
+      }else{
+        query.query.bool.must = [query.query.bool.must,{"range": this.getRangeFilter()}];
+      }
+    }else if (query.query.hasOwnProperty('bool')) {
+      query.query.bool['must'] = {"range": this.getRangeFilter()};
+    }else if(query.query.hasOwnProperty('filtered') && query.query.filtered.hasOwnProperty('query')){
+      var foo = query.query.filtered.query;
+      if (foo.hasOwnProperty('bool') && foo.bool.hasOwnProperty('must')){
+        if (query.query.filtered.query.bool.must.constructor === Array){
+          query.query.filtered.query.bool.must.push({"range": this.getRangeFilter()});
+        }else{
+          query.query.filtered.query.bool.must = [query.query.filtered.query.bool.must,{"range": this.getRangeFilter()}];
+        }
+      }else{
+        query.query.filtered.query.must = {"range": this.getRangeFilter()};
+      }
+    }else{
+      query.query['bool'] = {
+        "must": {"range": this.getRangeFilter()}
+      };
+    }
 
     this.addAdhocFilters(query, adhocFilters);
 
@@ -203,10 +208,6 @@ function (queryDef) {
       switch(aggDef.type) {
         case 'date_histogram': {
           esAgg["date_histogram"] = this.getDateHistogramAgg(aggDef);
-          break;
-        }
-        case 'histogram': {
-          esAgg["histogram"] = this.getHistogramAgg(aggDef);
           break;
         }
         case 'filters': {
@@ -259,6 +260,7 @@ function (queryDef) {
       nestedAggs.aggs[metric.id] = aggField;
     }
 
+    console.log(query);
     return query;
   };
 
@@ -280,12 +282,10 @@ function (queryDef) {
         }
       });
     }
-
     var size = 500;
-    if (queryDef.size) {
+    if(queryDef.size){
       size = queryDef.size;
     }
-
     query.aggs =  {
       "1": {
         "terms": {
