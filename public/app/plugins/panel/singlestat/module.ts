@@ -21,7 +21,7 @@ class SingleStatCtrl extends MetricsPanelCtrl {
   invalidGaugeRange: boolean;
   panel: any;
   events: any;
-  valueNameOptions: any[] = ['min','max','avg', 'current', 'total', 'name', 'first', 'delta', 'diff', 'range'];
+  valueNameOptions: any[] = ['min','max','avg', 'current', 'total', 'name', 'first', 'delta', 'diff', 'range', 'diff_for_two_last_values'];
 
   // Set and populate defaults
   panelDefaults = {
@@ -197,6 +197,22 @@ class SingleStatCtrl extends MetricsPanelCtrl {
         data.value = 0;
         data.valueFormated = _.escape(lastValue);
         data.valueRounded = 0;
+      } else if (this.panel.valueName === 'diff_for_two_last_values') {
+        var lastTwoValueArrays = _.takeRight(this.series[0].datapoints, 2);
+        var lastTwoValues = _.map(lastTwoValueArrays, function(value){
+          return _.isArray(value) ? value[0] : 0;
+        });
+        if (lastTwoValues.length === 2){
+          data.value = (lastTwoValues[1]-lastTwoValues[0])/lastTwoValues[0] * 100;
+          var decimalInfo = this.getDecimalsForValue(data.value);
+          var formatFunc = kbn.valueFormats[this.panel.format];
+          data.valueFormated = formatFunc(data.value, decimalInfo.decimals, decimalInfo.scaledDecimals);
+          data.valueRounded = kbn.roundValue(data.value, decimalInfo.decimals);
+        }else{
+          data.value = 'oops';
+          data.valueFormated = _.escape(data.value);
+          data.valueRounded = 'oops';
+        }
       } else {
         data.value = this.series[0].stats[this.panel.valueName];
         data.flotpairs = this.series[0].flotpairs;

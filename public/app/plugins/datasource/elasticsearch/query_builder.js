@@ -260,7 +260,6 @@ function (queryDef) {
       nestedAggs.aggs[metric.id] = aggField;
     }
 
-    console.log(query);
     return query;
   };
 
