@@ -1,0 +1,387 @@
+t=2017-04-12T10:05:12+0300 lvl=info msg="Starting Grafana" logger=main version=4.3.0-pre1 commit=41db91c compiled=2017-04-07T13:48:13+0300
+t=2017-04-12T10:05:12+0300 lvl=info msg="Config loaded from" logger=settings file=/home/app/Go/src/github.com/vedomosti/grafana/conf/defaults.ini
+t=2017-04-12T10:05:12+0300 lvl=info msg="Config loaded from" logger=settings file=conf/defaults.ini
+t=2017-04-12T10:05:12+0300 lvl=info msg="Path Home" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana
+t=2017-04-12T10:05:12+0300 lvl=info msg="Path Data" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data
+t=2017-04-12T10:05:12+0300 lvl=info msg="Path Logs" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data/log
+t=2017-04-12T10:05:12+0300 lvl=info msg="Path Plugins" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data/plugins
+t=2017-04-12T10:05:12+0300 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2017-04-12T10:05:12+0300 lvl=info msg="Starting DB migration" logger=migrator
+t=2017-04-12T10:05:12+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2017-04-12T10:05:12+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2017-04-12T10:05:12+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2017-04-12T10:05:12+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2017-04-12T10:05:12+0300 lvl=info msg="Starting plugin search" logger=plugins
+t=2017-04-12T10:05:12+0300 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2017-04-12T10:05:12+0300 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2017-04-12T10:05:12+0300 lvl=info msg="Initializing Stream Manager"
+t=2017-04-12T10:05:12+0300 lvl=info msg="Initializing HTTP Server" logger=http.server address=0.0.0.0:3000 protocol=http subUrl=
+t=2017-04-12T10:05:15+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=127.0.0.1 time_ms=4ns size=24
+t=2017-04-12T11:06:19+0300 lvl=info msg="Starting Grafana" logger=main version=4.3.0-pre1 commit=41db91c compiled=2017-04-07T13:48:13+0300
+t=2017-04-12T11:06:19+0300 lvl=info msg="Config loaded from" logger=settings file=/home/app/Go/src/github.com/vedomosti/grafana/conf/defaults.ini
+t=2017-04-12T11:06:19+0300 lvl=info msg="Config loaded from" logger=settings file=conf/defaults.ini
+t=2017-04-12T11:06:19+0300 lvl=info msg="Path Home" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana
+t=2017-04-12T11:06:19+0300 lvl=info msg="Path Data" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data
+t=2017-04-12T11:06:19+0300 lvl=info msg="Path Logs" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data/log
+t=2017-04-12T11:06:19+0300 lvl=info msg="Path Plugins" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data/plugins
+t=2017-04-12T11:06:19+0300 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2017-04-12T11:06:19+0300 lvl=info msg="Starting DB migration" logger=migrator
+t=2017-04-12T11:06:19+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2017-04-12T11:06:19+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2017-04-12T11:06:19+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2017-04-12T11:06:19+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2017-04-12T11:06:19+0300 lvl=info msg="Starting plugin search" logger=plugins
+t=2017-04-12T11:06:19+0300 lvl=info msg="Registering plugin" logger=plugins name=Crate
+t=2017-04-12T11:06:19+0300 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2017-04-12T11:06:19+0300 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2017-04-12T11:06:19+0300 lvl=info msg="Initializing Stream Manager"
+t=2017-04-12T11:06:19+0300 lvl=info msg="Initializing HTTP Server" logger=http.server address=0.0.0.0:3000 protocol=http subUrl=
+t=2017-04-12T11:22:51+0300 lvl=info msg="Starting Grafana" logger=main version=4.3.0-pre1 commit=41db91c compiled=2017-04-07T13:48:13+0300
+t=2017-04-12T11:22:51+0300 lvl=info msg="Config loaded from" logger=settings file=/home/app/Go/src/github.com/vedomosti/grafana/conf/defaults.ini
+t=2017-04-12T11:22:51+0300 lvl=info msg="Config loaded from" logger=settings file=conf/defaults.ini
+t=2017-04-12T11:22:51+0300 lvl=info msg="Path Home" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana
+t=2017-04-12T11:22:51+0300 lvl=info msg="Path Data" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data
+t=2017-04-12T11:22:51+0300 lvl=info msg="Path Logs" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data/log
+t=2017-04-12T11:22:51+0300 lvl=info msg="Path Plugins" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data/plugins
+t=2017-04-12T11:22:51+0300 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2017-04-12T11:22:51+0300 lvl=info msg="Starting DB migration" logger=migrator
+t=2017-04-12T11:22:51+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2017-04-12T11:22:51+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2017-04-12T11:22:51+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2017-04-12T11:22:51+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2017-04-12T11:22:51+0300 lvl=info msg="Starting plugin search" logger=plugins
+t=2017-04-12T11:22:51+0300 lvl=info msg="Registering plugin" logger=plugins name=Crate
+t=2017-04-12T11:22:51+0300 lvl=info msg="Registering plugin" logger=plugins name=SqlDB
+t=2017-04-12T11:22:51+0300 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2017-04-12T11:22:51+0300 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2017-04-12T11:22:51+0300 lvl=info msg="Initializing Stream Manager"
+t=2017-04-12T11:22:51+0300 lvl=info msg="Initializing HTTP Server" logger=http.server address=0.0.0.0:3000 protocol=http subUrl=
+2017/04/12 11:24:34 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:24:34+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:24:46 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:24:46+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:24:48 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:24:48+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:25:41 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:41+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:25:44 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:44+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:25:47 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:47+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:25:49 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:49+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:25:50 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:50+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:25:50 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:50+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:25:50 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:50+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=115ns size=0
+2017/04/12 11:25:50 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:50+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=36ns size=0
+2017/04/12 11:25:50 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:50+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:25:50 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:50+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:25:50 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:50+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:25:51 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:51+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:25:54 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:54+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:25:59 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:25:59+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:26:48 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:26:48+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:26:48 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:26:48+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:26:59 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:26:59+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:01 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:01+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:02 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:02+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:04 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:04+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:06 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:06+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:06 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:06+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=29ns size=0
+2017/04/12 11:27:06 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:06+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:06 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:06+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:06 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:06+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:06 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:06+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:06 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:06+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:07 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:07+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:08 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:08+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:09 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:09+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:11 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:11+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:12 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:12+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:12 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:12+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:12 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:12+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:12 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:12+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=59ns size=0
+2017/04/12 11:27:12 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:12+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:12 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:12+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:12 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:12+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:12 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:12+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:13 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:13+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:14 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:14+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:14 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:14+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:15 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:15+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:17 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:17+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:18 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:18+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:18 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:18+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:25 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:25+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:26 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:26+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=97ns size=0
+2017/04/12 11:27:26 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:26+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:26 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:26+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:26 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:26+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:27 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:27 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:27 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:27 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:27 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:27 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=1ns size=0
+2017/04/12 11:27:27 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:27+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:28 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:28+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:28 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:28+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:28 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:28+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:28 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:28+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:28 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:28+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:28 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:28+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:29 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:29+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:29 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:29+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=30ns size=0
+2017/04/12 11:27:29 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:29+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=28ns size=0
+2017/04/12 11:27:29 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:29+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:29 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:29+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:29 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:29+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:29 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:29+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:29 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:29+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:30 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:30+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:35 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:35+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:35 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:35+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:27:45 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:27:45+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:28:43 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:28:43+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:28:54 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:28:54+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:05 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:05+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:07 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:07+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:07 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:07+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:07 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:07+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:07 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:07+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:07 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:07+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:07 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:07+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=1ns size=0
+2017/04/12 11:29:07 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:07+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:07 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:07+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:08 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:08+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:17 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:17+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:17 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:17+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:19 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:19+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:20 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:20+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:20 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:20+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:20 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:20+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:21 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:21+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:25 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:25+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:25 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:25+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:31 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:31+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:33 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:33+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:39 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:39+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:29:45 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:29:45+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:30:03 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:30:03+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:30:05 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:30:05+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:30:05 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:30:05+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:30:05 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:30:05+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:30:06 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:30:06+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:30:06 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:30:06+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:30:06 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:30:06+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:30:06 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:30:06+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:33:17 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:33:17+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:33:18 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:33:18+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:33:18 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:33:18+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:33:19 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:33:19+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:33:19 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:33:19+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=1ns size=0
+2017/04/12 11:33:19 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:33:19+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:33:19 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:33:19+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:33:19 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:33:19+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:33:21 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:33:21+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:33:31 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:33:31+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+t=2017-04-12T11:34:04+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/proxy/3/query status=401 remote_addr=127.0.0.1 time_ms=0s size=26
+2017/04/12 11:34:52 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:34:52+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:34:52 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:34:52+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:34:54 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:34:54+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:34:54 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:34:54+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+t=2017-04-12T11:41:36+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=POST path=/api/datasources/proxy/3/query status=401 remote_addr=127.0.0.1 time_ms=0s size=26
+t=2017-04-12T11:41:38+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=POST path=/api/datasources/proxy/3/query status=401 remote_addr=127.0.0.1 time_ms=0s size=26
+2017/04/12 11:43:21 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:43:21+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:44:34 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:44:34+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+2017/04/12 11:45:46 http: proxy error: unsupported protocol scheme ""
+t=2017-04-12T11:45:46+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/query status=502 remote_addr=127.0.0.1 time_ms=0s size=0
+t=2017-04-12T11:55:29+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dist/purify.min.js.map status=404 remote_addr=127.0.0.1 time_ms=106ns size=11952
+t=2017-04-12T11:55:37+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dist/purify.min.js.map status=404 remote_addr=127.0.0.1 time_ms=96ns size=11952
+t=2017-04-12T11:55:37+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dist/purify.min.js.map status=404 remote_addr=127.0.0.1 time_ms=1ns size=11952
+t=2017-04-12T11:55:39+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dist/purify.min.js.map status=404 remote_addr=127.0.0.1 time_ms=2ns size=11952
+t=2017-04-12T11:55:39+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dist/purify.min.js.map status=404 remote_addr=127.0.0.1 time_ms=2ns size=11952
+t=2017-04-12T11:57:56+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dist/purify.min.js.map status=404 remote_addr=127.0.0.1 time_ms=1ns size=11952
+t=2017-04-12T11:58:09+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dist/purify.min.js.map status=404 remote_addr=127.0.0.1 time_ms=1ns size=11952
+t=2017-04-12T11:58:19+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dist/purify.min.js.map status=404 remote_addr=127.0.0.1 time_ms=52ns size=11952
+t=2017-04-12T11:58:21+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dist/purify.min.js.map status=404 remote_addr=127.0.0.1 time_ms=1ns size=11952
+t=2017-04-12T11:58:40+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dist/purify.min.js.map status=404 remote_addr=127.0.0.1 time_ms=2ns size=11952
+t=2017-04-12T11:59:00+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dist/purify.min.js.map status=404 remote_addr=127.0.0.1 time_ms=1ns size=11952
+t=2017-04-12T12:15:03+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/dashboard/db/new-dashboard-copy status=302 remote_addr=83.220.59.184 time_ms=0s size=29
+t=2017-04-12T12:15:31+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/dashboards/db/new-dashboard-copy status=404 remote_addr=83.220.59.184 time_ms=0s size=33
+t=2017-04-12T12:16:12+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=127.0.0.1 time_ms=0s size=29
+2017/04/12 12:17:55 http: proxy error: context canceled
+2017/04/12 12:17:55 http: proxy error: context canceled
+t=2017-04-12T12:17:55+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/_msearch status=502 remote_addr=127.0.0.1 time_ms=3ns size=0
+t=2017-04-12T12:17:55+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/_msearch status=502 remote_addr=127.0.0.1 time_ms=5.836µs size=0
+2017/04/12 12:17:55 http: proxy error: context canceled
+2017/04/12 12:17:55 http: proxy error: context canceled
+t=2017-04-12T12:17:55+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/_msearch status=502 remote_addr=127.0.0.1 time_ms=5.386µs size=0
+t=2017-04-12T12:17:55+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/_msearch status=502 remote_addr=127.0.0.1 time_ms=5.37µs size=0
+2017/04/12 12:17:55 http: proxy error: context canceled
+t=2017-04-12T12:17:55+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/_msearch status=502 remote_addr=127.0.0.1 time_ms=5.465µs size=0
+t=2017-04-12T12:29:02+0300 lvl=info msg="Starting Grafana" logger=main version=4.3.0-pre1 commit=41db91c compiled=2017-04-07T13:48:13+0300
+t=2017-04-12T12:29:02+0300 lvl=info msg="Config loaded from" logger=settings file=/home/app/Go/src/github.com/grafana/grafana/conf/defaults.ini
+t=2017-04-12T12:29:02+0300 lvl=info msg="Config loaded from" logger=settings file=conf/defaults.ini
+t=2017-04-12T12:29:02+0300 lvl=info msg="Path Home" logger=settings path=/home/app/Go/src/github.com/grafana/grafana
+t=2017-04-12T12:29:02+0300 lvl=info msg="Path Data" logger=settings path=/home/app/Go/src/github.com/grafana/grafana/data
+t=2017-04-12T12:29:02+0300 lvl=info msg="Path Logs" logger=settings path=/home/app/Go/src/github.com/grafana/grafana/data/log
+t=2017-04-12T12:29:02+0300 lvl=info msg="Path Plugins" logger=settings path=/home/app/Go/src/github.com/grafana/grafana/data/plugins
+t=2017-04-12T12:29:02+0300 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2017-04-12T12:29:02+0300 lvl=info msg="Starting DB migration" logger=migrator
+t=2017-04-12T12:29:02+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2017-04-12T12:29:02+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2017-04-12T12:29:02+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2017-04-12T12:29:02+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2017-04-12T12:29:02+0300 lvl=info msg="Starting plugin search" logger=plugins
+t=2017-04-12T12:29:02+0300 lvl=info msg="Registering plugin" logger=plugins name=Crate
+t=2017-04-12T12:29:02+0300 lvl=info msg="Registering plugin" logger=plugins name=SqlDB
+t=2017-04-12T12:29:02+0300 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2017-04-12T12:29:02+0300 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2017-04-12T12:29:02+0300 lvl=info msg="Initializing Stream Manager"
+t=2017-04-12T12:29:02+0300 lvl=info msg="Initializing HTTP Server" logger=http.server address=0.0.0.0:3000 protocol=http subUrl=
+2017/04/12 13:21:48 http: proxy error: context canceled
+t=2017-04-12T13:21:48+0300 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/_msearch status=502 remote_addr=127.0.0.1 time_ms=24ns size=0
+t=2017-04-12T13:27:35+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=127.0.0.1 time_ms=0s size=29
+t=2017-04-12T13:27:35+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=127.0.0.1 time_ms=1ns size=24
+t=2017-04-12T13:30:58+0300 lvl=info msg="Starting Grafana" logger=main version=4.3.0-pre1 commit=41db91c compiled=2017-04-07T13:48:13+0300
+t=2017-04-12T13:30:58+0300 lvl=info msg="Config loaded from" logger=settings file=/home/app/Go/src/github.com/vedomosti/grafana/conf/defaults.ini
+t=2017-04-12T13:30:58+0300 lvl=info msg="Config loaded from" logger=settings file=conf/defaults.ini
+t=2017-04-12T13:30:58+0300 lvl=info msg="Path Home" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana
+t=2017-04-12T13:30:58+0300 lvl=info msg="Path Data" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data
+t=2017-04-12T13:30:58+0300 lvl=info msg="Path Logs" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data/log
+t=2017-04-12T13:30:58+0300 lvl=info msg="Path Plugins" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data/plugins
+t=2017-04-12T13:30:58+0300 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2017-04-12T13:30:58+0300 lvl=info msg="Starting DB migration" logger=migrator
+t=2017-04-12T13:30:58+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2017-04-12T13:30:58+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2017-04-12T13:30:58+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2017-04-12T13:30:58+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2017-04-12T13:30:58+0300 lvl=info msg="Starting plugin search" logger=plugins
+t=2017-04-12T13:30:58+0300 lvl=info msg="Registering plugin" logger=plugins name=Crate
+t=2017-04-12T13:30:58+0300 lvl=info msg="Registering plugin" logger=plugins name=SqlDB
+t=2017-04-12T13:30:58+0300 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2017-04-12T13:30:58+0300 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2017-04-12T13:30:58+0300 lvl=info msg="Initializing Stream Manager"
+t=2017-04-12T13:30:58+0300 lvl=info msg="Initializing HTTP Server" logger=http.server address=0.0.0.0:3000 protocol=http subUrl=

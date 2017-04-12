@@ -1,0 +1,57 @@
+t=2017-04-07T13:57:00+0300 lvl=info msg="Starting Grafana" logger=main version=4.3.0-pre1 commit=41db91c compiled=2017-04-07T13:48:13+0300
+t=2017-04-07T13:57:00+0300 lvl=info msg="Config loaded from" logger=settings file=/home/app/Go/src/github.com/grafana/grafana/conf/defaults.ini
+t=2017-04-07T13:57:00+0300 lvl=info msg="Config loaded from" logger=settings file=conf/defaults.ini
+t=2017-04-07T13:57:00+0300 lvl=info msg="Path Home" logger=settings path=/home/app/Go/src/github.com/grafana/grafana
+t=2017-04-07T13:57:00+0300 lvl=info msg="Path Data" logger=settings path=/home/app/Go/src/github.com/grafana/grafana/data
+t=2017-04-07T13:57:00+0300 lvl=info msg="Path Logs" logger=settings path=/home/app/Go/src/github.com/grafana/grafana/data/log
+t=2017-04-07T13:57:00+0300 lvl=info msg="Path Plugins" logger=settings path=/home/app/Go/src/github.com/grafana/grafana/data/plugins
+t=2017-04-07T13:57:00+0300 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2017-04-07T13:57:00+0300 lvl=info msg="Starting DB migration" logger=migrator
+t=2017-04-07T13:57:00+0300 lvl=info msg="Executing migration" logger=migrator id="Update user table charset"
+t=2017-04-07T13:57:00+0300 lvl=info msg="Executing migration" logger=migrator id="Update temp_user table charset"
+t=2017-04-07T13:57:01+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2017-04-07T13:57:01+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2017-04-07T13:57:01+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2017-04-07T13:57:01+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2017-04-07T13:57:01+0300 lvl=info msg="Executing migration" logger=migrator id="Update org table charset"
+t=2017-04-07T13:57:01+0300 lvl=info msg="Executing migration" logger=migrator id="Update org_user table charset"
+t=2017-04-07T13:57:01+0300 lvl=info msg="Executing migration" logger=migrator id="Update dashboard table charset"
+t=2017-04-07T13:57:02+0300 lvl=info msg="Executing migration" logger=migrator id="Update dashboard_tag table charset"
+t=2017-04-07T13:57:02+0300 lvl=info msg="Executing migration" logger=migrator id="Update data_source table charset"
+t=2017-04-07T13:57:02+0300 lvl=info msg="Executing migration" logger=migrator id="Update api_key table charset"
+t=2017-04-07T13:57:02+0300 lvl=info msg="Executing migration" logger=migrator id="Update dashboard_snapshot table charset"
+t=2017-04-07T13:57:02+0300 lvl=info msg="Executing migration" logger=migrator id="Update quota table charset"
+t=2017-04-07T13:57:03+0300 lvl=info msg="Executing migration" logger=migrator id="Update plugin_setting table charset"
+t=2017-04-07T13:57:03+0300 lvl=info msg="Executing migration" logger=migrator id="Update playlist table charset"
+t=2017-04-07T13:57:03+0300 lvl=info msg="Executing migration" logger=migrator id="Update playlist_item table charset"
+t=2017-04-07T13:57:03+0300 lvl=info msg="Executing migration" logger=migrator id="Update preferences table charset"
+t=2017-04-07T13:57:04+0300 lvl=info msg="Executing migration" logger=migrator id="Update alert table charset"
+t=2017-04-07T13:57:05+0300 lvl=info msg="Executing migration" logger=migrator id="Update alert_notification table charset"
+t=2017-04-07T13:57:05+0300 lvl=info msg="Executing migration" logger=migrator id="Update annotation table charset"
+t=2017-04-07T13:57:05+0300 lvl=info msg="Starting plugin search" logger=plugins
+t=2017-04-07T13:57:05+0300 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2017-04-07T13:57:05+0300 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2017-04-07T13:57:05+0300 lvl=info msg="Initializing Stream Manager"
+t=2017-04-07T13:57:05+0300 lvl=info msg="Initializing HTTP Server" logger=http.server address=0.0.0.0:3000 protocol=http subUrl=
+t=2017-04-07T15:00:29+0300 lvl=info msg="Starting Grafana" logger=main version=4.3.0-pre1 commit=41db91c compiled=2017-04-07T13:48:13+0300
+t=2017-04-07T15:00:29+0300 lvl=info msg="Config loaded from" logger=settings file=/home/app/Go/src/github.com/vedomosti/grafana/conf/defaults.ini
+t=2017-04-07T15:00:29+0300 lvl=info msg="Config loaded from" logger=settings file=conf/defaults.ini
+t=2017-04-07T15:00:29+0300 lvl=info msg="Path Home" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana
+t=2017-04-07T15:00:29+0300 lvl=info msg="Path Data" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data
+t=2017-04-07T15:00:29+0300 lvl=info msg="Path Logs" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data/log
+t=2017-04-07T15:00:29+0300 lvl=info msg="Path Plugins" logger=settings path=/home/app/Go/src/github.com/vedomosti/grafana/data/plugins
+t=2017-04-07T15:00:29+0300 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2017-04-07T15:00:29+0300 lvl=info msg="Starting DB migration" logger=migrator
+t=2017-04-07T15:00:29+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2017-04-07T15:00:29+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2017-04-07T15:00:29+0300 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2017-04-07T15:00:29+0300 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2017-04-07T15:00:29+0300 lvl=info msg="Starting plugin search" logger=plugins
+t=2017-04-07T15:00:29+0300 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2017-04-07T15:00:29+0300 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2017-04-07T15:00:29+0300 lvl=info msg="Initializing Stream Manager"
+t=2017-04-07T15:00:29+0300 lvl=info msg="Initializing HTTP Server" logger=http.server address=0.0.0.0:3000 protocol=http subUrl=
+2017/04/07 15:05:14 httputil: ReverseProxy read error during body copy: context canceled
+t=2017-04-12T09:32:52+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=127.0.0.1 time_ms=301ns size=29
+t=2017-04-12T09:33:25+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=127.0.0.1 time_ms=0s size=29
+t=2017-04-12T10:03:41+0300 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=127.0.0.1 time_ms=0s size=29

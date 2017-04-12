@@ -7,8 +7,11 @@ import (
 	"net/http/httputil"
 	"net/url"
 	"strings"
+	"crypto/tls"
+        "net"
 	"time"
 
+	"github.com/grafana/grafana/pkg/api/sqldb"
 	"github.com/grafana/grafana/pkg/api/cloudwatch"
 	"github.com/grafana/grafana/pkg/bus"
 	"github.com/grafana/grafana/pkg/log"
@@ -18,6 +21,16 @@ import (
 	"github.com/grafana/grafana/pkg/setting"
 	"github.com/grafana/grafana/pkg/util"
 )
+
+var dataProxyTransport = &http.Transport{
+ 	TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+ 	Proxy:           http.ProxyFromEnvironment,
+ 	Dial: (&net.Dialer{
+ 		Timeout:   30 * time.Second,
+ 		KeepAlive: 30 * time.Second,
+ 	}).Dial,
+ 	TLSHandshakeTimeout: 10 * time.Second,
+ }
 
 var (
 	dataproxyLogger log.Logger = log.New("data-proxy-log")
@@ -36,6 +49,7 @@ func NewReverseProxy(ds *m.DataSource, proxyPath string, targetUrl *url.URL) *ht
 			reqQueryVals.Add("u", ds.User)
 			reqQueryVals.Add("p", ds.Password)
 			req.URL.RawQuery = reqQueryVals.Encode()
+			reqQueryVals.Add("db", ds.Database)
 		} else if ds.Type == m.DS_INFLUXDB {
 			req.URL.Path = util.JoinUrlFragments(targetUrl.Path, proxyPath)
 			req.URL.RawQuery = reqQueryVals.Encode()
@@ -86,25 +100,28 @@ func ProxyDataSourceRequest(c *middleware.Context) {
 		return
 	}
 
-	if ds.Type == m.DS_CLOUDWATCH {
-		cloudwatch.HandleRequest(c, ds)
-		return
-	}
+ if ds.Type == m.DS_CLOUDWATCH {
+    cloudwatch.HandleRequest(c, ds)
+    return
+  }else if ds.Type == m.DS_SQLDB {
+ 		sqldb.HandleRequest(c, ds)
+	return
+  }
 
-	if ds.Type == m.DS_INFLUXDB {
-		if c.Query("db") != ds.Database {
-			c.JsonApiErr(403, "Datasource is not configured to allow this database", nil)
-			return
-		}
-	}
+  if ds.Type == m.DS_INFLUXDB {
+    if c.Query("db") != ds.Database {
+      c.JsonApiErr(403, "Datasource is not configured to allow this database", nil)
+      return
+    }
+  }
 
-	targetUrl, _ := url.Parse(ds.Url)
-	if len(setting.DataProxyWhiteList) > 0 {
-		if _, exists := setting.DataProxyWhiteList[targetUrl.Host]; !exists {
-			c.JsonApiErr(403, "Data proxy hostname and ip are not included in whitelist", nil)
-			return
-		}
-	}
+  targetUrl, _ := url.Parse(ds.Url)
+  if len(setting.DataProxyWhiteList) > 0 {
+    if _, exists := setting.DataProxyWhiteList[targetUrl.Host]; !exists {
+      c.JsonApiErr(403, "Data proxy hostname and ip are not included in whitelist", nil)
+      return
+    }
+  }
 
 	proxyPath := c.Params("*")
 
