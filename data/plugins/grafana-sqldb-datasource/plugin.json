@@ -1,0 +1,31 @@
+{
+  "type": "datasource",
+  "name": "SqlDB",
+  "id": "sqldb",
+
+  "defaultMatchFormat": "regex values",
+  "metrics": true,
+  "annotations": true,
+
+  "info": {
+    "description": "SqlDB data source for grafana",
+    "author": {
+      "name": "SRA OSS, Inc. Japan",
+      "url": "http://www.sraoss.co.jp/"
+    },
+    "keywords": ["sqldb", "datasource"],
+    "links": [
+      {"name": "Project site", "url": "https://github.com/sraoss/grafana-sqldb-datasource"},
+      {"name": "Apache 2.0", "url": ""}
+    ],
+    "screenshots": [
+    ],
+    "version": "1.0",
+    "updated": "2016-07-13"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": [ ]
+  }
+}
