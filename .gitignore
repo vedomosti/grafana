@@ -32,6 +32,8 @@ public/css/*.min.css
 
 /data/*
 !/data/plugins/grafana-sqldb-datasource
+/data/plugins/grafana-sqldb-datasource/src_gen
+/data/plugins/grafana-sqldb-datasource/node_modules
 /bin/*
 
 conf/custom.ini
