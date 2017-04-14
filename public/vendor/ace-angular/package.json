@@ -1,0 +1,93 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ace-angular",
+        "scope": null,
+        "escapedName": "ace-angular",
+        "name": "ace-angular",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/app/Go/src/github.com/vedomosti/grafana"
+    ]
+  ],
+  "_from": "ace-angular@latest",
+  "_id": "ace-angular@0.1.1",
+  "_inCache": true,
+  "_location": "/ace-angular",
+  "_nodeVersion": "4.3.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/ace-angular-0.1.1.tgz_1474544518209_0.5569636202417314"
+  },
+  "_npmUser": {
+    "name": "jayralencar",
+    "email": "jayralencarpereira@gmail.com"
+  },
+  "_npmVersion": "2.14.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ace-angular",
+    "scope": null,
+    "escapedName": "ace-angular",
+    "name": "ace-angular",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ace-angular/-/ace-angular-0.1.1.tgz",
+  "_shasum": "d11496093fbf10456fd36ac6ffeeea5121855a9e",
+  "_shrinkwrap": null,
+  "_spec": "ace-angular",
+  "_where": "/home/app/Go/src/github.com/vedomosti/grafana",
+  "author": {
+    "name": "Jayr Alencar",
+    "url": "www.jayralencar.com.br"
+  },
+  "bugs": {
+    "url": "https://github.com/jayralencar/ace-angular/issues"
+  },
+  "dependencies": {},
+  "description": "Module to use ace editor in angular js",
+  "devDependencies": {
+    "ace-builds": "latest",
+    "angular": "latest"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "d11496093fbf10456fd36ac6ffeeea5121855a9e",
+    "tarball": "https://registry.npmjs.org/ace-angular/-/ace-angular-0.1.1.tgz"
+  },
+  "gitHead": "882ef55250e8cd3312d87a8fd824f5dd2ddf4caf",
+  "homepage": "https://github.com/jayralencar/ace-angular#readme",
+  "keywords": [
+    "ace",
+    "editor",
+    "angular"
+  ],
+  "license": "MIT",
+  "main": "ace-angular.js",
+  "maintainers": [
+    {
+      "name": "jayralencar",
+      "email": "jayralencarpereira@gmail.com"
+    }
+  ],
+  "name": "ace-angular",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayralencar/ace-angular.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.1"
+}

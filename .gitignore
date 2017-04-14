@@ -19,15 +19,19 @@ docs/changed-files
 
 # locally required config files
 public/css/*.min.css
+*.log
 
 # Editor junk
 *.sublime-workspace
 *.swp
+*.pid
 .idea/
+/conf/*
 *.iml
 .vscode/
 
 /data/*
+!/data/plugins/grafana-sqldb-datasource
 /bin/*
 
 conf/custom.ini

@@ -63,6 +63,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "ace-angular": "^0.1.1",
+    "ace-builds": "^1.2.6",
     "eventemitter3": "^2.0.2",
     "gaze": "^1.1.2",
     "grunt-jscs": "3.0.1",

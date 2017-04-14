@@ -3,7 +3,7 @@
 	<div class="gf-form-inline">
 		<div class="gf-form gf-form--grow">
 			<label class="gf-form-label query-keyword width-7">Query</label>
-      <textarea type="text" class="gf-form-input" ng-model="ctrl.target.query" spellcheck='false' placeholder="Lucene query" ng-blur="ctrl.refresh()"></textarea>
+      <div type="text" class="gf-form-input" ng-model="ctrl.target.query" spellcheck='false' placeholder="Lucene query" ng-blur="ctrl.refresh()" ace-editor="{mode: 'json', advanced:{enableBasicAutocompletion: true, enableSnippets: true, enableLiveAutocompletion: true, wrap: true}}"></div>
 		</div>
 		<div class="gf-form max-width-15">
 			<label class="gf-form-label query-keyword">Alias</label>

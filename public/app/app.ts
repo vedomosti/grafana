@@ -9,7 +9,11 @@ import 'angular-sanitize';
 import 'angular-dragdrop';
 import 'angular-bindonce';
 import 'angular-ui';
-
+import 'ace';
+import 'ace.ext-lang';
+import 'ace.sql-mode';
+import 'ace.json-mode';
+import 'ace-angular';
 import $ from 'jquery';
 import angular from 'angular';
 import config from 'app/core/config';
@@ -39,7 +43,7 @@ export class GrafanaApp {
   }
 
   init() {
-    var app = angular.module('grafana', []);
+    var app = angular.module('grafana', ['ace.angular']);
 
     moment.locale(config.bootData.user.locale);
 

@@ -31,7 +31,12 @@ System.config({
     "jquery.flot.crosshair": "vendor/flot/jquery.flot.crosshair",
     "jquery.flot.fillbelow": "vendor/flot/jquery.flot.fillbelow",
     "jquery.flot.gauge": "vendor/flot/jquery.flot.gauge",
-    "d3": "vendor/d3/d3.js"
+    "d3": "vendor/d3/d3.js",
+    "ace": "vendor/ace-builds/src-min-noconflict/ace.js",
+    "ace.ext-lang": "vendor/ace-builds/src-min-noconflict/ext-language_tools.js",
+    "ace.sql-mode": "vendor/ace-builds/src-min-noconflict/mode-sql.js",
+    "ace.json-mode": "vendor/ace-builds/src-min-noconflict/mode-json.js",
+    "ace-angular": "vendor/ace-angular/ace-angular.js"
   },
 
   packages: {
