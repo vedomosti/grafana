@@ -26,7 +26,7 @@ public/css/*.min.css
 *.swp
 *.pid
 .idea/
-/conf/*
+/conf/
 *.iml
 .vscode/
 

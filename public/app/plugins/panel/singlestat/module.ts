@@ -21,7 +21,7 @@ class SingleStatCtrl extends MetricsPanelCtrl {
   invalidGaugeRange: boolean;
   panel: any;
   events: any;
-  valueNameOptions: any[] = ['min','max','avg', 'current', 'total', 'name', 'first', 'delta', 'diff', 'range', 'diff_for_two_last_values'];
+  valueNameOptions: any[] = ['min','max','avg', 'current', 'total', 'name', 'first', 'delta', 'diff', 'range', 'diff_two_last_values'];
 
   // Set and populate defaults
   panelDefaults = {
@@ -29,6 +29,8 @@ class SingleStatCtrl extends MetricsPanelCtrl {
     datasource: null,
     maxDataPoints: 100,
     interval: null,
+    show_percent_diff: false,
+    percent_diff: 0.0,
     targets: [{}],
     cacheTimeout: null,
     format: 'none',
@@ -197,16 +199,19 @@ class SingleStatCtrl extends MetricsPanelCtrl {
         data.value = 0;
         data.valueFormated = _.escape(lastValue);
         data.valueRounded = 0;
-      } else if (this.panel.valueName === 'diff_for_two_last_values') {
+      } else if (this.panel.valueName === 'diff_two_last_values') {
+        this.panel.show_percent_diff = true;
         var lastTwoValueArrays = _.takeRight(this.series[0].datapoints, 2);
         var lastTwoValues = _.map(lastTwoValueArrays, function(value){
           return _.isArray(value) ? value[0] : 0;
         });
         if (lastTwoValues.length === 2){
-          data.value = (lastTwoValues[1]-lastTwoValues[0])/lastTwoValues[0] * 100;
+          this.panel.percent_diff = (lastTwoValues[1]-lastTwoValues[0])/lastTwoValues[0] * 100;
+          data.value = lastTwoValues[1];
           var decimalInfo = this.getDecimalsForValue(data.value);
           var formatFunc = kbn.valueFormats[this.panel.format];
           data.valueFormated = formatFunc(data.value, decimalInfo.decimals, decimalInfo.scaledDecimals);
+          this.panel.percent_diff = kbn.roundValue(this.panel.percent_diff, decimalInfo.decimals);
           data.valueRounded = kbn.roundValue(data.value, decimalInfo.decimals);
         }else{
           data.value = 'oops';
@@ -310,6 +315,9 @@ class SingleStatCtrl extends MetricsPanelCtrl {
     }
 
     function applyColoringThresholds(value, valueString) {
+      if (panel.show_percent_diff){
+        valueString = valueString + " (" + panel.percent_diff + "%)";
+      }
       if (!panel.colorValue) {
         return valueString;
       }
