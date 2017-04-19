@@ -46,7 +46,7 @@ class TablePanelCtrl extends MetricsPanelCtrl {
   };
 
   /** @ngInject */
-  constructor($scope, $injector, private annotationsSrv, private $sanitize) {
+  constructor($scope, $injector, private annotationsSrv, private $sanitize, private backendSrv) {
     super($scope, $injector);
     this.pageIndex = 0;
 
@@ -94,27 +94,87 @@ class TablePanelCtrl extends MetricsPanelCtrl {
   }
 
   onDataReceived(dataList) {
-    this.dataRaw = dataList;
-    this.pageIndex = 0;
+    var ctrl = this;
+    this.loadDocuments(dataList, function(result){
+      ctrl.dataRaw = result;
+      console.log(ctrl.dataRaw);
+      ctrl.pageIndex = 0;
 
-    // automatically correct transform mode based on data
-    if (this.dataRaw && this.dataRaw.length) {
-      if (this.dataRaw[0].type === 'table') {
-        this.panel.transform = 'table';
-      } else {
-        if (this.dataRaw[0].type === 'docs') {
-          this.panel.transform = 'json';
+      // automatically correct transform mode based on data
+      if (ctrl.dataRaw && ctrl.dataRaw.length) {
+        if (ctrl.dataRaw[0].type === 'table') {
+          ctrl.panel.transform = 'table';
         } else {
-          if (this.panel.transform === 'table' || this.panel.transform === 'json') {
-            this.panel.transform = 'timeseries_to_rows';
+          if (ctrl.dataRaw[0].type === 'docs') {
+            ctrl.panel.transform = 'json';
+          } else {
+            if (ctrl.panel.transform === 'table' || ctrl.panel.transform === 'json') {
+              ctrl.panel.transform = 'timeseries_to_rows';
+            }
           }
         }
       }
-    }
 
-    this.render();
+      ctrl.render();
+    });
   }
 
+  loadDocuments(data, callback) {
+    if (data &&
+        data.length &&
+        (data[0].type === 'docs') &&
+        data[0].datapoints.length &&
+        ("tdoc_id" in data[0].datapoints[0])) {
+          var datasources = null;
+          var backendSrv = this.backendSrv;
+          backendSrv.get('/api/datasources')
+            .then((result) => {
+               datasources = result;
+               var snipeDataSource = _.find(datasources, function(datasource){
+                return datasource.name.includes('snipe');
+               });
+              if (snipeDataSource) {
+                var doc_ids = _.flatMap(data[0].datapoints, function(obj) {
+                  return obj['tdoc_id'];
+                });
+                  backendSrv.post('/api/datasources/proxy/' + snipeDataSource.id + '/query', {
+                    query: "select documents.id as tdoc_id, documents.title as tdoc_title," +
+                    "(select string_agg(title,',') FROM categories where ARRAY[documents.category_ids] @> ARRAY[categories.id] " +
+                      " AND categories.slug_path ~ 'parts.*{1}') as part," +
+                    "(select string_agg(title,',') FROM categories where ARRAY[documents.category_ids] @> ARRAY[categories.id] " +
+                      " AND categories.slug_path ~ 'rubrics.*{1}') as rubric," +
+                    "urls.rendered as url " +
+                    "from documents" +
+                    " INNER JOIN urls on urls.id = documents.url_id " +
+                    " where documents.id in (" + _.join(doc_ids, ',')  + ")"
+                  }).then((documents) => {
+                    if (documents.results[0].series[0].values.length) {
+                      _.forEach(documents.results[0].series[0].values, function(document) {
+                        var doc_index = _.findIndex(data[0].datapoints, function(datapoint) {
+                          return datapoint['tdoc_id'] === document[0];
+                        });
+                        if (doc_index !== -1) {
+                          data[0].datapoints[doc_index] = _.merge(data[0].datapoints[doc_index], {
+                            title: document[1],
+                            part: document[2],
+                            rubric: document[3],
+                            url: document[4]
+                          });
+                        }
+                      });
+                      callback(data);
+                    } else {
+                      callback(data);
+                    }
+                  });
+              } else {
+                callback(data);
+              }
+            });
+    } else {
+      return callback(data);
+    }
+  }
   render() {
     this.table = transformDataToTable(this.dataRaw, this.panel);
     this.table.sort(this.panel.sort);
