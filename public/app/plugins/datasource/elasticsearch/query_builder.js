@@ -16,6 +16,10 @@ function (queryDef) {
       lte: "$timeTo",
     };
 
+    if (this.esVersion < 5) {
+      filter[this.timeField].format = "epoch_millis";
+    }
+
     return filter;
   };
 
@@ -65,7 +69,9 @@ function (queryDef) {
     esAgg.field = this.timeField;
     esAgg.min_doc_count = settings.min_doc_count || 0;
     esAgg.extended_bounds = {min: "$timeFrom", max: "$timeTo"};
-    //esAgg.format = "epoch_millis";
+    if (this.esVersion < 5) {
+      esAgg.format = "epoch_millis";
+    }
 
     if (esAgg.interval === 'auto') {
       esAgg.interval = "$__interval";
