@@ -11,7 +11,7 @@ function (_) {
       panels                        : {},
       new_panel_title: 'Panel Title',
       playlist_timespan: "1m",
-      unsaved_changes_warning: true,
+      unsaved_changes_warning: false,
       appSubUrl: ""
     };
 

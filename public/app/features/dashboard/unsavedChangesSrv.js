@@ -1,10 +1,11 @@
 define([
   'angular',
   'lodash',
+  'app/core/settings',
 ],
-function(angular, _) {
+function(angular, _, Settings) {
   'use strict';
-
+  var settings = new Settings();
   var module = angular.module('grafana.services');
 
   module.service('unsavedChangesSrv', function($rootScope, $q, $location, $timeout, contextSrv, $window) {
@@ -34,7 +35,7 @@ function(angular, _) {
         if (self.originalPath === $location.path()) { return true; }
         if (self.ignoreChanges()) { return true; }
 
-        if (self.hasChanges()) {
+        if (self.hasChanges() && settings.unsaved_changes_warning) {
           event.preventDefault();
           self.next = next;
 
