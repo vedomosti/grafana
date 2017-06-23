@@ -32,7 +32,6 @@ public/css/*.min.css
 
 conf/custom.ini
 fig.yml
-docker-compose.yml
 profile.cov
 /grafana
 .notouch

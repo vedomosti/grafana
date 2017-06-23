@@ -1,0 +1,9 @@
+version: '3'
+services:
+  grafana:
+    build: .
+    command: ./bin/grafana-server
+    volumes:
+      - ./public_gen:/go/src/github.com/grafana/grafana/public_gen
+    ports:
+      - "3000:3000"
